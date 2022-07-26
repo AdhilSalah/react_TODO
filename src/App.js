@@ -13,7 +13,7 @@ function App() {
 
   const [toDo, setToDo] = useState([]);
 
-  
+
   //temp state
 
   const [newTask, setNewTask] = useState("");
@@ -163,7 +163,7 @@ function App() {
                       </span>
                     )}
 
-                    <span title="Delete" onClick={() => deleteTask(task.id)}>
+                    <span title="Delete" id="delete" onClick={() => deleteTask(task.id)}>
                       <FontAwesomeIcon icon={faTrashCan}/>
                     </span>
                   </div>
